@@ -1,0 +1,33 @@
+#ifndef HASHTABLE_H
+#define HASHTABLE_H
+
+#include "Record.h"
+#include "Data.h"
+#include "BucketNode.h"
+
+class HashTable {
+    
+public:
+    HashTable();
+    virtual ~HashTable();
+    void initializeBuckets(int h, int bucketsize);
+    void insertWithCountry(Record * record);
+    void insertWithDisease(Record * record);
+    Data * searchWithCountry(string country);
+    Data * searchWithDisease(string disease);
+    void printDiseasesStats();
+    void printGlobalStatsWithDates(int,int);
+    void printGlobalStats();
+    void printHT();
+
+    int bucketsize;
+    int h;
+    bool initialized;
+    BucketNode** ht;
+    
+    void insert(string key, Record * record);
+    Data * search(string key);
+    
+};
+
+#endif /* HASHTABLE_H */
