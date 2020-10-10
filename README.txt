@@ -1,3 +1,5 @@
+check h1-spring-2020.pdf for project description/requirements
+
 
 Για τη μεταγλώττιση και την εκτέλεση χρησιμοποιώ το Makefile που έχω φτιάξει, οπότε αρκεί για τη μεταγλώττιση η εντολή:
  
